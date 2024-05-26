@@ -12,8 +12,6 @@
 
 <link rel="stylesheet" href="anafront/style.css">
   <script src="anafront/login.js" defer></script>
-
-
     </head>
     <body class="antialiased">
             <div class="container" id="container">
@@ -42,7 +40,7 @@
                     <span>Inicie sesión con su correo y contraseña</span>
                     <input type="email" name="email" id="email" placeholder="Correo electrónico">
                     <input type="password" name="password" id="password" placeholder="Contraseña">
-                    <a href="#">¿Olvidaste tu contraseña?</a>
+                    <x-input-error :messages="$errors->get('email')" class="mt-2" />
                     <button>Iniciar Sesión</button>
                 </form>
             </div>
