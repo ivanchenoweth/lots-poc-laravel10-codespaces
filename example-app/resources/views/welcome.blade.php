@@ -18,20 +18,23 @@
     <body class="antialiased">
             <div class="container" id="container">
             <div class="form-container sign-up">
-                <form >
+            <form method="POST" action="{{ route('register') }}">
+                    @csrf
                     <h1>Crear Cuenta</h1>
                     <div class="social-icons">
                             <i class="fa-solid fa-user"></i>    
                     </div>
                     <span>Usa tu correo para registrarte</span>
-                        <input type="text" name="user" id="user" placeholder="Nombre de usuario">
+                        <input type="text" name="name" id="name" placeholder="Nombre de usuario">
                         <input type="email" name="email" id="email" placeholder="Correo electrónico">
                         <input type="password" name="password" id="password" placeholder="Contraseña">
+                        <input type="password" name="password_confirmation" id="password_confirmation" placeholder="Confirmar Contraseña">
                         <button>Registrarse</button>
                 </form>
             </div>
             <div class="form-container sign-in">
-                <form >
+            <form method="POST" action="{{ route('login') }}">
+                    @csrf
                     <h1>Iniciar Sesión</h1>
                     <div class="social-icons">
                     <i class="fa-solid fa-user"></i>
