@@ -11,7 +11,6 @@ use Faker\Generator as Faker;
  */
 class UserFactory extends Factory
 {
-    
     /**
      * Define the model's default state.
      *
