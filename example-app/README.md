@@ -64,3 +64,16 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Based on tutorial
+https://arjunamrutiya.medium.com/building-dynamic-bar-charts-in-laravel-using-chart-js-a-step-by-step-guide-1b2039b15be0
+
+The SQL Query in the tutorial is :
+
+Este es el query SQL que envia el controlador a la grafica:
+SELECT
+    DATE_FORMAT(created_at, '%Y-%m-%d') AS date,
+    COUNT(*) AS aggregate
+FROM users
+WHERE created_at BETWEEN DATE_SUB(CURRENT_DATE(), INTERVAL 30 DAY) AND CURRENT_DATE()
+GROUP BY date
