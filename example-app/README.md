@@ -66,7 +66,12 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ## Based on tutorial
+
+https://medium.com/@laravelprotips/laravel-and-chart-js-easy-examples-of-bar-line-and-pie-charts-4b6cbd0fc5ed
 https://arjunamrutiya.medium.com/building-dynamic-bar-charts-in-laravel-using-chart-js-a-step-by-step-guide-1b2039b15be0
+
+
+
 
 The SQL Query in the tutorial is :
 
