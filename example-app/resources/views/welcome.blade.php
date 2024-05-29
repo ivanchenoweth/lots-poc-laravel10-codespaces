@@ -12,6 +12,7 @@
 
 <link rel="stylesheet" href="anafront/style.css">
   <script src="anafront/login.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
     <body class="antialiased">
             <div class="container" id="container">
